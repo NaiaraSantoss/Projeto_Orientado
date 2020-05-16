@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Adicionar Cartão</title>
+	<link rel="stylesheet" href="/css/all.min.css">
+	<link rel="stylesheet"  href="adicionarcartoes.css">
+
+<body>
+	<div class="login-box">
+		<h2>Adicionar Cartão</h2>
+
+		<fieldset>
+     <legend>Cartão de crédito</legend>
+
+     <div class="form-group">
+         
+         <input type="text" class="form-control" id="nome-titular" name="nome-titular" placeholder="Nome do titular">
+     </div>
+
+     <div class="form-group">
+         <input type="text" class="form-control" id="numero-cartao" name="numero-cartao" placeholder="Número do cartão">
+     </div>
+
+     <div class="form-group">
+         <select class="custom-select" id="bandeira-cartao">
+             <option disabled selected>Bandeira...</option>
+             <option value="master">MasterCard</option>
+             <option value="visa">VISA</option>
+             <option value="amex">American Express</option>
+         </select>
+     </div>
+
+     <div class="form-group">
+         <label for="validade-cartao">Validade:</label>
+         <input type="month" class="form-control" id="validade-cartao" name="validade-cartao" 
+         min="2020-05" value="2022-06">
+     </div>
+     		<input class="btn" type="button" onclick="location.href='http://localhost/SaldoPositivo'" id="btn" name="" value="Enviar" >
+
+
+ </fieldset>
+
+	</div>
+
+</body>
+</head>
+
+</html>
